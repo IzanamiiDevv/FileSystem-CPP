@@ -7,6 +7,7 @@ int main() {
     ofstream outfile("test.txt");
     if(outfile.is_open()) {
         outfile << "Hello World" << endl;
+        outfile.close();
     } else {
         cerr << "Error On Writing File" << endl;
     }

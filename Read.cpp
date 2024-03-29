@@ -8,8 +8,9 @@ int main() {
     if(infile.is_open()) {
         string line;
         while(getline(infile,line)) {
-            cout << line << endl;
+            cout << line << "\n";
         }
+        infile.close();
     }else {
         cerr << "Error Reading the File" << endl;
     }
